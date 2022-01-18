@@ -31,6 +31,9 @@ class CountUpView(
     fun stopCountUp() {
         handler?.removeCallbacks(countUpAction)
     }
+    fun clearCountTime(){
+        updateCountTime(0)
+    }
 
     @SuppressLint("SetTextI18n")
     private fun updateCountTime(countTimeSeconds: Int) {
